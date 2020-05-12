@@ -1,0 +1,43 @@
+body {
+    background-color: #F2FAFF;
+    color: black;
+    font-family: "interstate";
+
+}
+.header{
+    position: relative;
+}
+.header .largeheader {
+    font-weight: 125;
+    font-size: 5em;
+    color: #DEDEDE;
+}
+.header .alisonsmall {
+    color: #526069;
+    font-weight: 500;
+    font-size: 2em;
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+    
+}
+a {
+    color: #526069;
+    text-decoration: none;
+}
+
+.hamburger {
+    height: 1vw;
+    width: 1vw;
+
+}
+.drawings{
+    align-items: center;
+    margin: auto;
+    max-width: 10%;
+    max-height: 10%;
+    margin: 5vw;
+        /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+        -webkit-box-shadow: 10px 10px 0px 0px grey; 
+        box-shadow: 10px 10px 0px 0px grey;
+      }
