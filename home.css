@@ -4,6 +4,12 @@ body {
     font-family: "interstate";
 
 }
+img {
+    max-width:100%;
+    display: block;
+    max-width: 60vw;
+    margin: 5vw auto;
+  }
 .header{
     position: relative;
 }
@@ -57,7 +63,7 @@ a {
         /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
         -webkit-box-shadow: 10px 10px 0px 0px grey; 
         box-shadow: 10px 10px 0px 0px grey;
-      }
+      } 
 .footer{
     height: 10vw;
     background-color: #D4F0FF;
@@ -68,64 +74,11 @@ a {
     width: 5px;
 }
 .menu_hidden .menu {
-
-
-    /* ⬇⬇ START LEFT SLIDE EXAMPLE ⬇⬇ */
-    /* THE STARTING POSITION SO THAT THE MENU IS HIDDEN */
-    /* 
-    left: -60vw;
-     */
-    /* ⬆⬆ END LEFT SLIDE EXAMPLE ⬆⬆ */
-  
-  
-    /* ⬇⬇ START TOP SLIDE - FULLWIDTH - EXAMPLE ⬇⬇ */
-    /* THE STARTING POSITION SO THAT THE MENU IS HIDDEN */
     
     top: -100vh;
-   
-     /* ⬆⬆ END TOP SLIDE - FULLWIDTH - EXAMPLE ⬆⬆ */
-  
-  
-    /* ⬇⬇ START GROW SHRINK EXAMPLE ⬇⬇ */
-    /* THE STARTING HEIGHT SO THAT THE MENU IS HIDDEN */
-    /*   
-    max-height: 0;
-    */
-    /* ⬆⬆ END GROW SHRINK EXAMPLE ⬆⬆ */
-  
-  
-  
   }
   
   .menu {
-  
-    /* ⬇⬇ START LEFT SLIDE EXAMPLE ⬇⬇ */
-    /* WIDTH SHOULD MATCH THE AMOUNT IT IS HIDDEN BY */
-    /*
-    width: 60vw;
-    height: 100vh;
-    background-color: gray;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 20;
-    */
-    /* ⬆⬆ END LEFT SLIDE EXAMPLE ⬆⬆ */
-  
-  
-    /* ⬇⬇ START GROW SHRINK EXAMPLE ⬇⬇ */
-    /*
-    max-height:100vh;
-    background-color: gray;
-    overflow: hidden;
-    */
-    /* ⬆⬆ END GROW SHRINK EXAMPLE ⬆⬆ */
-  
-  
-    /* ⬇⬇ START TOP SLIDE - FULLWIDTH - EXAMPLE ⬇⬇ */
-    /* THE HEIGHT IS CALCULATED AS 100VH - 2.5VH */
-    /* SO THE WHOLE MENU HAS SPACE AROUND IT BUT IF YOU DONT WANT SPACE THEN USE 100VH  */
-    /* AND IF YOU WANT MORE SPACE INCREASE THE TOP AND LEFT AND DECREASE THE HGITH AND WIDTH */
   
     width: 95vw;
     height: 95vh;
@@ -134,9 +87,6 @@ a {
     left: 2.5vw;
     position: absolute;
     z-index: 20;
-    
-    /* ⬆⬆ END TOP SLIDE - FULLWIDTH - EXAMPLE ⬆⬆ */
-  
   
     -webkit-transition: all 0.9s ease-in-out;
     -o-transition: all 0.9s ease-in-out;
@@ -153,7 +103,7 @@ a {
   }
   
   .menu a:hover {
-    color: blue;
+    color: #526069;
   }
   
   /* CLOSE ICON */
@@ -186,7 +136,7 @@ a {
   }
   
   .menu_close:hover .line {
-    background-color: red;
+    background-color:#526069;
   }
   
   
@@ -210,5 +160,6 @@ a {
   }
   
   .hamburger:hover .line {
-    background-color: yellow;
+    background-color:white ;
   }
+  
