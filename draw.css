@@ -37,16 +37,80 @@ a {
     width: 1vw;
 
 }
-.drawings{
-    align-items: center;
-    margin: auto;
-    max-width: 10%;
-    max-height: 10%;
-    margin: 5vw;
-        /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
-        -webkit-box-shadow: 10px 10px 0px 0px grey; 
-        box-shadow: 10px 10px 0px 0px grey;
-      }
+
+    .drawings .draw1{
+        max-width: 60vw;
+    
+    margin: 5vw auto;
+    
+    /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+    
+    -webkit-box-shadow: 10px 10px 0px 0px grey;
+    
+    box-shadow: 10px 10px 0px 0px grey;
+    
+    }
+    .drawings .draw2 {
+        max-width: 60vw;
+    
+    margin: 5vw auto;
+    
+    /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+    
+    -webkit-box-shadow: 10px 10px 0px 0px grey;
+    
+    box-shadow: 10px 10px 0px 0px grey;
+    
+    }
+
+    .drawings .draw3 {
+        max-width: 60vw;
+    
+    margin: 5vw auto;
+    
+    /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+    
+    -webkit-box-shadow: 10px 10px 0px 0px grey;
+    
+    box-shadow: 10px 10px 0px 0px grey;
+    
+    }
+    .drawings .draw4 {
+        max-width: 60vw;
+    
+    margin: 5vw auto;
+    
+    /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+    
+    -webkit-box-shadow: 10px 10px 0px 0px grey;
+    
+    box-shadow: 10px 10px 0px 0px grey;
+    
+    }
+    .drawings .draw5 {
+        max-width: 60vw;
+    
+    margin: 5vw auto;
+    
+    /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+    
+    -webkit-box-shadow: 10px 10px 0px 0px grey;
+    
+    box-shadow: 10px 10px 0px 0px grey;
+    
+    }
+    .drawings .draw6{
+        max-width: 30vw;
+    
+    margin: 5vw auto;
+    
+    /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+    
+    -webkit-box-shadow: 10px 10px 0px 0px grey;
+    
+    box-shadow: 10px 10px 0px 0px grey;
+    
+    }
       .menu {
   
         width: 95vw;
@@ -131,4 +195,56 @@ a {
       .hamburger:hover .line {
         background-color:white ;
       }
-      
+      .menu_hidden .menu { 
+
+        top: -100vh;
+        
+        }
+        
+        
+        img {
+
+            max-width:100%;
+            
+            display: block;
+            
+            }
+
+
+            .footer{
+                height: 10vw;
+                grid-gap: .5vw;
+                background-color: #D4F0FF;
+                display: grid;
+                grid-template-areas: "twitter instagram facebook";
+                
+            }
+            .footer .twitter {
+                max-width: 2vw;
+                
+                margin: 1vw auto;
+                grid-area: "twitter";
+            
+            }
+            .footer .instagram {
+                max-width: 2vw;
+                
+                margin: 1vw auto;
+                grid-area: "instagram";
+            
+            }
+            .footer .facebook {
+                max-width: 2vw;
+                
+                margin: 1vw auto;
+                grid-area: "facebook";
+            }
+
+
+.drawings .caption {
+    text-align: center;
+    font-size: 1vw;
+    color:#526069;
+
+}
+

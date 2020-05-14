@@ -37,123 +37,197 @@ a {
     width: 1vw;
 
 }
-  .content{
-      display: grid;
-      color: #526069;
-      grid-template-areas: 
-      "bio portrait";
-  }  
+.content{
+    display: grid;
+    color: #526069;
+    grid-template-areas: 
+    "bio pic";
+    height: 50vw;
+  
+}  
 
 .content .bio {
-    color: #526069;
+  font-size: .8em;
+  margin-top: 10vw;
+  margin-right: 10vw;
+  text-align: right;
+  grid-area: "bio";
+
+}
+
+.content .pic {
+  grid-area: "pic";
+  max-width: 30vw;
+  
+  }
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+.content .bio {
     font-size: .8em;
     margin-top: 10vw;
     margin-right: 10vw;
     text-align: right;
-    grid-area: "bio";
+
 
 }
 
-.content .portrait {
-    grid-area: "portrait";
-    max-width: 10%;
-    max-height: 10%;
-    margin: 5vw;
-        /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
-        -webkit-box-shadow: 10px 10px 0px 0px grey; 
-        box-shadow: 10px 10px 0px 0px grey;
-      }
+.content .pic {
+    grid-area: "pic";
+    max-width: 30vw;
     
-.footer{
-    height: 10vw;
-    background-color: #D4F0FF; 
-    max-width:100%;
-    display: block;
-    max-width: 60vw;
-    margin: 5vw auto;
+    }
+    }
+    .footer{
+        height: 10vw;
+        grid-gap: .5vw;
+        background-color: #D4F0FF;
+        display: grid;
+        grid-template-areas: "twitter instagram facebook";
+        
+    }
+    .footer .twitter {
+        max-width: 2vw;
+        
+        margin: 1vw auto;
+        grid-area: "twitter";
+    
+    }
+    .footer .instagram {
+        max-width: 2vw;
+        
+        margin: 1vw auto;
+        grid-area: "instagram";
+    
+    }
+    .footer .facebook {
+        max-width: 2vw;
+        
+        margin: 1vw auto;
+        grid-area: "facebook";
+    }
+
+    .menu {
+  
+        width: 95vw;
+        height: 95vh;
+        background-color: rgba(128, 128, 128, 0.5); 
+        top: 2.5vh;
+        left: 2.5vw;
+        position: absolute;
+        z-index: 20;
+      
+        -webkit-transition: all 0.9s ease-in-out;
+        -o-transition: all 0.9s ease-in-out;
+        transition: all 0.9s ease-in-out;
+      }
+      
+      .menu a {
+        display: block;
+        padding: 20px;
+        text-align: center;
+        color: white;
+        font-size: 3em;
+        text-decoration: none;
+      }
+      
+      .menu a:hover {
+        color: #526069;
+      }
+      
+      /* CLOSE ICON */
+      .menu_close {
+        position: absolute;
+        right: 45px;
+        top: 20px;
+      }
+      
+      .menu_close .line {
+        width: 40px;
+        height: 5px;
+        background-color: white;
+        display: block;
+        margin: 8px auto;
+        cursor: pointer;
+        -webkit-transition: all 0.1s ease-in-out;
+        -o-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+      }
+      
+      .menu_close .line:nth-of-type(1) {
+        transform: rotate(-45deg);
+        position: absolute;
+      }
+      
+      .menu_close .line:nth-of-type(2) {
+        transform: rotate(45deg);
+        position: absolute;
+      }
+      
+      .menu_close:hover .line {
+        background-color:#526069;
+      }
+      
+      
+      /* hamburger icon */
+      .hamburger {
+        margin: 10px;
+        width: 40px;
+        height: 35px;
+        z-index: 10;
+      }
+      .hamburger .line {
+        width: 40px;
+        height: 5px;
+        background-color: black;
+        display: block;
+        margin: 4px auto;
+        cursor: pointer;
+        -webkit-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+      }
+      
+      .hamburger:hover .line {
+        background-color:white ;
+      }
+      .menu_hidden .menu { 
+
+        top: -100vh;
+        
+        }
+        
+        
+        img {
+
+            max-width:100%;
+            
+            display: block;
+            
+            }
+
+ 
+  /* Phone Styles */
+  @media screen and (max-width: 768px) {
+
+    .content {
+        grid-template-rows: "bio pic";
+        display: grid;
+
+    }
+      .content .bio {
+        font-size: .8em;
+        margin-top: 10vw;
+        margin-right: left; 
+    
+        grid-area: "bio";
+    }
+    
+    .content .pic {
+        max-width: 30vw;
+        margin: auto;
+        grid-area: "pic";
+        
+    }
+
 }
-.menu {
-  
-    width: 95vw;
-    height: 95vh;
-    background-color: rgba(128, 128, 128, 0.5); 
-    top: 2.5vh;
-    left: 2.5vw;
-    position: absolute;
-    z-index: 20;
-  
-    -webkit-transition: all 0.9s ease-in-out;
-    -o-transition: all 0.9s ease-in-out;
-    transition: all 0.9s ease-in-out;
-  }
-  
-  .menu a {
-    display: block;
-    padding: 20px;
-    text-align: center;
-    color: white;
-    font-size: 3em;
-    text-decoration: none;
-  }
-  
-  .menu a:hover {
-    color: #526069;
-  }
-  
-  /* CLOSE ICON */
-  .menu_close {
-    position: absolute;
-    right: 45px;
-    top: 20px;
-  }
-  
-  .menu_close .line {
-    width: 40px;
-    height: 5px;
-    background-color: white;
-    display: block;
-    margin: 8px auto;
-    cursor: pointer;
-    -webkit-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
-  }
-  
-  .menu_close .line:nth-of-type(1) {
-    transform: rotate(-45deg);
-    position: absolute;
-  }
-  
-  .menu_close .line:nth-of-type(2) {
-    transform: rotate(45deg);
-    position: absolute;
-  }
-  
-  .menu_close:hover .line {
-    background-color:#526069;
-  }
-  
-  
-  /* hamburger icon */
-  .hamburger {
-    margin: 10px;
-    width: 40px;
-    height: 35px;
-    z-index: 10;
-  }
-  .hamburger .line {
-    width: 40px;
-    height: 5px;
-    background-color: black;
-    display: block;
-    margin: 4px auto;
-    cursor: pointer;
-    -webkit-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .hamburger:hover .line {
-    background-color:white ;
-  }
-  
